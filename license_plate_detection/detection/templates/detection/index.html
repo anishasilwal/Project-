@@ -1,0 +1,48 @@
+<!-- detection/templates/detection/index.html -->
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>License Plate Detection</title>
+    <link rel="stylesheet" href="{% static 'detection/styles.css' %}">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="{% static 'detection/Park Here.png' %}" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About Us</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>License Plate Detection Project</h1>
+        <!-- Form for uploading files -->
+        <form id="upload-form" enctype="multipart/form-data" action="{% url 'upload_file' %}" method="post">
+            {% csrf_token %}
+            <label for="file">Upload Image or Video:</label>
+            <input type="file" id="file" name="file" accept="image/*,video/*">
+            <button type="submit">Upload</button>
+        </form>
+        <div id="result"></div>
+
+        <div id="license-details">
+            <h2>License Plate Details</h2>
+            <div id="details"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 License Plate Detection. All rights reserved.</p>
+    </footer>
+
+    <script src="{% static 'detection/scripts.js' %}"></script>
+</body>
+</html>

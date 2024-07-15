@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="{% static 'detection/styles.css' %}">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="{% static 'detection/Park Here.png' %}" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About Us</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section class="contact-section">
+            <h1>Contact Us</h1>
+            <div class="contact-content">
+                <img src="{% static 'detection/contact.png' %}" alt="Contact Us Image" class="contact-image">
+                <div class="contact-text">
+                    <p>If you have any questions or need further information, please contact us:</p>
+                    <p>Email: support@licenseplatedetection.com</p>
+                    <p>Phone: +123 456 7890</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 License Plate Detection. All rights reserved.</p>
+    </footer>
+</body>
+</html>

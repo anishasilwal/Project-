@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('parking_lot.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover;
+    color: #333;
+}
+
+nav {
+    background-color: #a4efa6;
+    color: #fff;
+    padding: 0px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 120px;
+    width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    size: 2px;
+}
+
+nav ul li {
+    margin: 0 1em;
+    
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+form {
+    margin-top: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+input[type="file"], input[type="number"] {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 0.5em 2em;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.calculator, .qr-code, #license-details {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 1em;
+}
+
+#result, #charge-result, #details {
+    margin-top: 2em;
+    font-size: 1.2em;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em; /* Reduced footer height */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* About and Contact page styles */
+.about-section, .contact-section {
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+.about-section h1, .contact-section h1 {
+    text-align: center;
+    color: #333;
+}
+
+.about-content, .contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-image, .contact-image {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-text, .contact-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-text p, .contact-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+}
